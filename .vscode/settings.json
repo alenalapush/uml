@@ -1,0 +1,28 @@
+{
+    // Визуальный порядок
+    "editor.renderWhitespace": "selection",
+    "editor.guides.indentation": true,
+    "editor.wordWrap": "on", // Перенос строк (важно для длинных текстов ТЗ)
+    "editor.lineNumbers": "on",
+    // Работа с данными и API
+    "json.format.enable": true,
+    "json.schemas": [],
+    // Улучшение читаемости (рекомендуется шрифт с лигатурами, например JetBrains Mono)
+    "editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', monospace",
+    "editor.fontLigatures": true,
+    // Специфичное для аналитика: автоформатирование при сохранении
+    "editor.formatOnSave": true,
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
+    },
+    // Исключаем лишний шум из поиска
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true
+    }
+}
