@@ -1,0 +1,15 @@
+
+{
+  "recommendations": [
+    "jebbs.plantuml",              // UML-диаграммы (Sequence, Class) из текста
+    "hediet.vscode-drawio",        // Интеграция draw.io прямо в редактор
+    "rangav.vscode-thunder-client", // Легкий аналог Postman для тестов API
+    "yzhang.markdown-all-in-one",  // Удобное написание документации (Markdown)
+    "njpwerner.autodocstring",     // Автогенерация описаний (если читаете код)
+    "streetsidesoftware.code-spell-checker", // Проверка опечаток (поддерживает русский)
+    "mechatroner.rainbow-csv",     // Чтение тяжелых CSV с логами или выгрузками
+    "tamasfe.even-better-toml",    // Работа с конфигами
+    "redhat.vscode-yaml",          // Валидация YAML (для сваггеров/OpenAPI)
+    "mcu-debug.rtos-views"         // Если работаете с системным проектированием
+  ]
+}
