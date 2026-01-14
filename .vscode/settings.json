@@ -1,28 +1,50 @@
 {
-    // Визуальный порядок
+    // --- Визуальный порядок и удобство чтения ---
     "editor.renderWhitespace": "selection",
     "editor.guides.indentation": true,
-    "editor.wordWrap": "on", // Перенос строк (важно для длинных текстов ТЗ)
+    "editor.wordWrap": "on",
     "editor.lineNumbers": "on",
-    // Работа с данными и API
-    "json.format.enable": true,
-    "json.schemas": [],
-    // Улучшение читаемости (рекомендуется шрифт с лигатурами, например JetBrains Mono)
     "editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', monospace",
     "editor.fontLigatures": true,
-    // Специфичное для аналитика: автоформатирование при сохранении
     "editor.formatOnSave": true,
+    // --- Работа с текстом и документацией (Markdown) ---
     "[markdown]": {
         "editor.quickSuggestions": {
             "comments": "on",
             "strings": "on",
             "other": "on"
-        }
+        },
+        "files.trimTrailingWhitespace": false, // Важно для переносов строк в MD
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
-    // Исключаем лишний шум из поиска
+    "markdown.preview.doubleClickToSwitchToEditor": true,
+    "markdown.preview.fontSize": 14,
+    // --- Работа с UML (PlantUML) ---
+    "plantuml.exportFormat": "png",
+    "plantuml.render": "Local",
+    "plantuml.server": "https://www.plantuml.com/plantuml", // Резервный сервер, если локальный не заведен
+    // --- Проверка правописания (Русский + Английский) ---
+    "cSpell.language": "en,ru",
+    "cSpell.enabled": true,
+    "cSpell.spellCheckDelay": 500,
+    // --- Работа с API и Данными (JSON, YAML, OpenAPI) ---
+    "json.format.enable": true,
+    "redhat.telemetry.enabled": false,
+    "yaml.format.enable": true,
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/schemas/v3.0/schema.json": [
+            "/*.yaml",
+            "/*.openapi.yaml"
+        ]
+    },
+    // --- Исключения и чистота проекта ---
     "files.exclude": {
         "**/.git": true,
         "**/.DS_Store": true,
-        "**/node_modules": true
-    }
+        "**/node_modules": true,
+        "**/out": true
+    },
+    // --- Интеграция с Draw.io ---
+    "hediet.vscode-drawio.theme": "atlas", // Современный интерфейс для схем
+    "hediet.vscode-drawio.offline": true
 }

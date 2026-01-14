@@ -1,15 +1,20 @@
-
 {
   "recommendations": [
-    "jebbs.plantuml",              // UML-диаграммы (Sequence, Class) из текста
-    "hediet.vscode-drawio",        // Интеграция draw.io прямо в редактор
-    "rangav.vscode-thunder-client", // Легкий аналог Postman для тестов API
-    "yzhang.markdown-all-in-one",  // Удобное написание документации (Markdown)
-    "njpwerner.autodocstring",     // Автогенерация описаний (если читаете код)
-    "streetsidesoftware.code-spell-checker", // Проверка опечаток (поддерживает русский)
-    "mechatroner.rainbow-csv",     // Чтение тяжелых CSV с логами или выгрузками
-    "tamasfe.even-better-toml",    // Работа с конфигами
-    "redhat.vscode-yaml",          // Валидация YAML (для сваггеров/OpenAPI)
-    "mcu-debug.rtos-views"         // Если работаете с системным проектированием
+    /* Проектирование и UML */
+    "jebbs.plantuml", // UML-диаграммы из текста (маст-хэв)
+    "hediet.vscode-drawio", // Схемы и BPMN (визуальный редактор)
+    "bpmn-io.vs-code-bpmn-io", // Специализированный редактор для BPMN 2.0
+    /* Работа с API и Данными */
+    "42crunch.vscode-openapi", // Проектирование Swagger/OpenAPI (очень важно!)
+    "rangav.vscode-thunder-client", // Тесты API (замена Postman)
+    "gongyz.json-crack", // Визуализация сложных JSON-структур
+    /* Документация и Текст */
+    "yzhang.markdown-all-in-one", // Лучший плагин для Markdown
+    "shinnn.markdownlint", // Проверка качества твоей документации
+    "streetsidesoftware.code-spell-checker", // Опечатки (обязательно добавь русский словарь в настройках)
+    "streetsidesoftware.code-spell-checker-russian", // Русский словарь для чекера
+    /* Вспомогательные инструменты */
+    "mechatroner.rainbow-csv", // Чтение логов и таблиц в CSV
+    "redhat.vscode-yaml" // Валидация YAML (конфиги, сваггеры)
   ]
 }
