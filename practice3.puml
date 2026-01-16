@@ -15,6 +15,7 @@ package "Система управления такси" {
     usecase "Принять заказ" as UC_Accept
     usecase "Вывод средств" as UC_Withdraw
     usecase "Проверка личности (KYC)" as UC_KYC
+    usecase "Отправить квитанцию на Email" as UC_Email
     
     ' Функции диспетчера
     usecase "Просмотр всех активных заказов" as UC_ViewOrders
@@ -25,15 +26,17 @@ package "Система управления такси" {
 Drv --> UC_Accept
 Drv --> UC_Withdraw
 
-' Связи включения (include)
+' Связи включения (include) - выполняются ВСЕГДА
 UC_Withdraw ..> UC_KYC : <<include>>
 UC_Accept ..> UC_Login : <<include>>
+
+' Связь расширения (extend) - выполняется ОПЦИОНАЛЬНО
+' Стрелка идет ОТ дополнительной функции К основной
+UC_Email ..> UC_Withdraw : <<extend>>
 
 ' --- Связи Диспетчера ---
 Disp --> UC_ViewOrders
 Disp --> UC_AssignDriver
-
-' Диспетчер тоже должен войти в систему для просмотра заказов
 UC_ViewOrders ..> UC_Login : <<include>>
 
 @enduml
