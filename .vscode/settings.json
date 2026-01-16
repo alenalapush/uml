@@ -1,50 +1,29 @@
 {
-    // --- Визуальный порядок и удобство чтения ---
-    "editor.renderWhitespace": "selection",
-    "editor.guides.indentation": true,
-    "editor.wordWrap": "on",
-    "editor.lineNumbers": "on",
-    "editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', monospace",
-    "editor.fontLigatures": true,
+    "cSpell.enabledFileTypes": {
+        "*": true,
+        "markdown": true
+    },
+    "cSpell.language": "en, ru",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    // --- Работа с текстом и документацией (Markdown) ---
-    "[markdown]": {
-        "editor.quickSuggestions": {
-            "comments": "on",
-            "strings": "on",
-            "other": "on"
-        },
-        "files.trimTrailingWhitespace": false, // Важно для переносов строк в MD
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    "editor.minimap.enabled": false,
+    "editor.suggest.preview": true,
+    "editor.wordWrap": "on",
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": true,
+    "explorer.confirmDragAndDrop": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "workbench.colorCustomizations": {
+        "gitlens.trailingLineForegroundColor": "#888",
+        "tab.activeBackground": "#fff3"
     },
-    "markdown.preview.doubleClickToSwitchToEditor": true,
-    "markdown.preview.fontSize": 14,
-    // --- Работа с UML (PlantUML) ---
-    "plantuml.exportFormat": "png",
-    "plantuml.render": "Local",
-    "plantuml.server": "https://www.plantuml.com/plantuml", // Резервный сервер, если локальный не заведен
-    // --- Проверка правописания (Русский + Английский) ---
-    "cSpell.language": "en,ru",
-    "cSpell.enabled": true,
-    "cSpell.spellCheckDelay": 500,
-    // --- Работа с API и Данными (JSON, YAML, OpenAPI) ---
-    "json.format.enable": true,
-    "redhat.telemetry.enabled": false,
-    "yaml.format.enable": true,
-    "yaml.schemas": {
-        "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/schemas/v3.0/schema.json": [
-            "/*.yaml",
-            "/*.openapi.yaml"
-        ]
-    },
-    // --- Исключения и чистота проекта ---
-    "files.exclude": {
-        "**/.git": true,
-        "**/.DS_Store": true,
-        "**/node_modules": true,
-        "**/out": true
-    },
-    // --- Интеграция с Draw.io ---
-    "hediet.vscode-drawio.theme": "atlas", // Современный интерфейс для схем
-    "hediet.vscode-drawio.offline": true
+    "workbench.tree.indent": 20,
+    "[plantuml]": {
+        // "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "jebbs.plantuml"
+    }
 }

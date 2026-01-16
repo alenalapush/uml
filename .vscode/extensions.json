@@ -1,20 +1,23 @@
 {
-  "recommendations": [
-    /* Проектирование и UML */
-    "jebbs.plantuml", // UML-диаграммы из текста (маст-хэв)
-    "hediet.vscode-drawio", // Схемы и BPMN (визуальный редактор)
-    "bpmn-io.vs-code-bpmn-io", // Специализированный редактор для BPMN 2.0
-    /* Работа с API и Данными */
-    "42crunch.vscode-openapi", // Проектирование Swagger/OpenAPI (очень важно!)
-    "rangav.vscode-thunder-client", // Тесты API (замена Postman)
-    "gongyz.json-crack", // Визуализация сложных JSON-структур
-    /* Документация и Текст */
-    "yzhang.markdown-all-in-one", // Лучший плагин для Markdown
-    "shinnn.markdownlint", // Проверка качества твоей документации
-    "streetsidesoftware.code-spell-checker", // Опечатки (обязательно добавь русский словарь в настройках)
-    "streetsidesoftware.code-spell-checker-russian", // Русский словарь для чекера
-    /* Вспомогательные инструменты */
-    "mechatroner.rainbow-csv", // Чтение логов и таблиц в CSV
-    "redhat.vscode-yaml" // Валидация YAML (конфиги, сваггеры)
-  ]
+    "recommendations": [
+        "jebbs.plantuml",
+        "hediet.vscode-drawio",
+        "bpmn-io.vs-code-bpmn-io",
+        "42crunch.vscode-openapi",
+        "rangav.vscode-thunder-client",
+        "gongyz.json-crack",
+        "yzhang.markdown-all-in-one",
+        "shinnn.markdownlint",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-russian",
+        "mechatroner.rainbow-csv",
+        "redhat.vscode-yaml",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker-russian",
+        "streetsidesoftware.code-spell-checker",
+        "esbenp.prettier-vscode",
+        "natqe.reload",
+        "naumovs.color-highlight",
+        "jebbs.plantuml"
+    ]
 }
