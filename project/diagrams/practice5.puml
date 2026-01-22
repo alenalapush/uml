@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+actor "Клиент" as Client
+actor "Водитель" as Driver
+
+package "Система Такси" {
+    usecase "Заказать поездку" as UC_Order
+    usecase "Изменить маршрут" as UC_ChangeRoute
+    usecase "Оплатить поездку" as UC_Pay
+    usecase "Просмотр маршрута" as UC_View
+}
+
+Client --> UC_Order
+Client --> UC_ChangeRoute
+Client --> UC_Pay
+
+Driver --> UC_View
+UC_ChangeRoute ..> UC_View : <<include>> (уведомить водителя)
+@enduml

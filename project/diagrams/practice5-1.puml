@@ -1,0 +1,25 @@
+@startuml
+autonumber
+actor "Клиент" as User
+participant "Мобильное приложение" as App
+participant "Сервер такси" as Server
+participant "PricingService" as Price
+participant "Водитель" as Driver
+
+User -> App: Добавить точку в маршрут
+App -> Server: PATCH /orders/{id}/route (new_coords)
+activate Server
+
+Server -> Price: GET /recalculate (old_route, new_point)
+activate Price
+Price --> Server: 200 OK (updated_price)
+deactivate Price
+
+Server -> Driver: Push: Маршрут изменен
+Server --> App: 200 OK (new_price)
+App --> User: Показать новую стоимость
+
+User -> App: Подтвердить изменение
+App -> Server: POST /orders/{id}/confirm-change
+Server --> App: 200 OK
+@enduml

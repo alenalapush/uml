@@ -1,0 +1,18 @@
+@startuml
+[*] --> Created
+Created --> Searching
+Searching --> Driver_Assigned
+Driver_Assigned --> Waiting : Водитель на месте
+
+Waiting --> In_Progress : Поехали
+In_Progress --> On_Stop : Прибыли в пром. точку
+On_Stop --> In_Progress : Продолжили движение
+
+In_Progress --> Finished : Конечная точка
+Finished --> [*]
+
+state On_Stop {
+  [*] --> Waiting_Client
+  Waiting_Client --> Movement_Resumed : Клиент вернулся
+}
+@enduml
