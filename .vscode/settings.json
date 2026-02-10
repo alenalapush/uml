@@ -22,8 +22,11 @@
     },
     "workbench.tree.indent": 20,
     "[plantuml]": {
-        // "editor.defaultFormatter": "yzhang.markdown-all-in-one",
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "jebbs.plantuml"
-    }
+    },
+    "plantuml.java": "C:\\Program Files\\Java\\jdk-13.0.1\\bin\\java.exe",
+    "plantuml.render": "Local",
+    "plantuml.graphvizDot": "C:\\Program Files\\Graphviz\\bin\\dot.exe",
+    "plantuml.exportOutDir": "out"
 }
